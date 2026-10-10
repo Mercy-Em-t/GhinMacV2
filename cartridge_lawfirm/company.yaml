@@ -1,0 +1,9 @@
+name: "GhInMac Legal Partners"
+departments:
+  intake:
+    allowed_tools: ["query_db", "conflict_check", "schedule_consultation"]
+  litigation:
+    allowed_tools: ["query_db", "draft_subpoena", "review_evidence"]
+  accounting:
+    allowed_tools: ["query_db", "bill_hours"]
+llm_provider: "gemini"

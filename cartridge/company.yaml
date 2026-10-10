@@ -1,0 +1,21 @@
+name: "Craft Atelier"
+llm_provider: "gemini"
+
+departments:
+  finance:
+    name: "Payment Reconciliation"
+    allowed_tools: ["reconcile_mpesa", "alert_admin"]
+    max_budget_per_task: 150
+  dispatch:
+    name: "Dispatch & Logistics"
+    allowed_tools: ["assign_rider", "mark_in_transit", "alert_admin"]
+    max_budget_per_task: 150
+  support:
+    name: "Customer Support"
+    allowed_tools: ["query_order", "alert_admin"]
+    max_budget_per_task: 100
+
+manager:
+  heartbeat_interval_seconds: 10
+  timeout_seconds: 30
+  max_errors_before_quarantine: 3

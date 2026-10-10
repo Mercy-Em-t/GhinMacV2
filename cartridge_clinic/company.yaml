@@ -1,0 +1,12 @@
+name: "GhInMac Healthcare"
+departments:
+  triage:
+    allowed_tools: ["query_db", "schedule_appointment", "check_symptoms"]
+    max_budget_per_task: 150
+  doctors:
+    allowed_tools: ["query_db", "prescribe_medication", "view_records"]
+    max_budget_per_task: 500
+  billing:
+    allowed_tools: ["query_db", "process_insurance"]
+    max_budget_per_task: 100
+llm_provider: "gemini"

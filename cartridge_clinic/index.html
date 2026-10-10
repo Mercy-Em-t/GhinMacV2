@@ -1,0 +1,4 @@
+<html><body><h1>GhInMac Healthcare</h1>
+<button onclick="fetch('/tasks', {method: 'POST', body: JSON.stringify({department: 'triage', payload: {symptoms: 'fever'}})})">Admit Patient</button>
+<button onclick="fetch('/tasks', {method: 'POST', body: JSON.stringify({department: 'doctors', payload: {patient_id: '123', action: 'consult'}})})">Doctor Consult</button>
+</body></html>
